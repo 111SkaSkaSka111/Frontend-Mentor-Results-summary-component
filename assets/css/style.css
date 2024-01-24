@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-radius: 20px;
+    width: 450px;
+    color: #aaa;
+    justify-content: center;
+    box-shadow: 10px 10px 20px #0000001c;
+}
+
+.left {
+    width: 50%;
+    background: linear-gradient(to bottom, #5934ee, #2e2be9);
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.left .heading {
+    margin: 10px 0;
+    color: #aaa;
+}
+
+.left .score {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #4e21ca, #2421ca00);
+}
+
+.left .score .nilai {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}
+
+.left .score .max-score {
+    color: #aaa;
+}
+
+.left h3 {
+    color: #fff;
+    margin: 20px;
+}
+
+/* right */
+.right {
+    width: 50%;
+    padding: 30px 20px;
+}
+
+h5 {
+    color: #000;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    margin-bottom: -10px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #4e21ca, #2421ca);
+}
+
+#reaction {
+    color: #ff5757;
+    background-color: #ff575715;
+}
+
+#memory {
+    color: #ffb01f;
+    background-color: #ffb01f15;
+}
+
+#verbal {
+    color: #00bd91;
+    background-color: #00bd9115;
+}
+
+#visual {
+    color: #1125d4;
+    background-color: #1124d415;
+}
+
+@media (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+        height: 50vh;
+        border-radius: 0 0 20px 20px;
+    }
+}
